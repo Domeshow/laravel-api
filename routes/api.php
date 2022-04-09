@@ -17,10 +17,10 @@ use App\Http\Controllers\ArticleController;
 
 Route::get('articles', [ArticleController::class, 'index']);
  
-Route::get('articles/{id}', [ArticleController::class,'show']);
+Route::get('articles/{article}', [ArticleController::class,'show']);
 
 Route::post('articles', [ArticleController::class, 'store']);
 
-Route::put('articles/{id}', [ArticleController::class, 'update']);
+Route::put('articles/{article}', [ArticleController::class, 'update']);
 
-Route::delete('articles/{id}', [ArticleController::class, 'delete']);
+Route::delete('articles/{article}', [ArticleController::class, 'delete']);
