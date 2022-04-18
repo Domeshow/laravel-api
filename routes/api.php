@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,5 @@ Route::post('articles', [ArticleController::class, 'store']);
 Route::put('articles/{article}', [ArticleController::class, 'update']);
 
 Route::delete('articles/{article}', [ArticleController::class, 'delete']);
+
+Route::post('users/register', [RegisterController::class, 'register']);
